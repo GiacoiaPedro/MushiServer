@@ -62,7 +62,9 @@
         <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
         <li><a href="#about"><i class="bi bi-person navicon"></i> Información</a></li>
         <li><a href="#guide"><i class="bi bi-file-earmark-text navicon"></i> Guía</a></li>
+        <li><a href="#fotos"><i class="bi bi-image navicon"></i> Fotos 2da Temporada</a></li>
         <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contacto</a></li>
+        
       </ul>
     </nav>
 
@@ -295,10 +297,56 @@
 
 </div>
 
-</section><!-- End Guía de Instalación Section -->
+<!-- photos -->
+<section id="guide" class="guide section">
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Galería de Fotos</h2>
+    <p>Aquí puedes encontrar fotos destacadas del servidor.</p>
+  </div><!-- End Section Title -->
 
+  <div class="gallery">
+    <a href="assets/foto1.png" target="_blank">
+      <img src="assets/foto1.png" alt="Foto 1">
+    </a>
+    <a href="assets/foto2.png" target="_blank">
+      <img src="assets/foto2.png" alt="Foto 2">
+    </a>
+    <a href="assets/foto3.png" target="_blank">
+      <img src="assets/foto3.png" alt="Foto 3">
+    </a>
+    <a href="assets/foto4.png" target="_blank">
+      <img src="assets/foto4.png" alt="Foto 4">
+    </a>
+    <a href="assets/foto5.png" target="_blank">
+      <img src="assets/foto5.png" alt="Foto 5">
+    </a>
+  </div>
+</section>
 
-          
+<style>
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos imágenes por renglón */
+    gap: 20px; /* Espacio entre las fotos */
+  }
+
+  .gallery img {
+    width: 100%; /* Las imágenes ocupan el ancho completo de la columna */
+    height: auto;
+    border: 5px solid #ccc; /* Borde alrededor de cada imagen */
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    cursor: pointer; /* Cambia el cursor para indicar que se puede hacer clic */
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .gallery img:hover {
+    border-color: #4CAF50; /* Cambia el color del borde al pasar el mouse */
+    transform: scale(1.05); /* Efecto de aumento al pasar el mouse */
+  }
+</style>
+
 
   
    
